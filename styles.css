@@ -5,7 +5,7 @@ header{
     display: flex;
     top:0;
     width: 100%;
-    background-color: rgb(33, 94, 4); 
+    background-color:rgb(75, 124, 1); 
     justify-content: space-between;
     position: fixed;
     z-index: 1;
@@ -19,7 +19,7 @@ nav a {
     border-radius: 20px;
 }
 nav a:hover{
-    background-color: rgb(75, 124, 1);
+    background-color: rgb(110, 168, 23);
     transition: 0.5s;
 }
 section.home{
@@ -44,46 +44,14 @@ section.contact{
     background-color: black; 
     height: 600px;
 }
-section.product{
-    background-color: chartreuse; 
-    background-size: cover; 
-    background-repeat: no-repeat;
-    background-attachment: fixed; height: 1200px;
-}
-section.product .container{
-justify-content: center;
-display: flex;
-Flex-wrap: wrap; 
-padding-top: 50px;
-}
-section.product .container.card {
-    background-color: white; 
-    text-align: center; 
-    padding: 5px;
-    width:200px;
-    height: 400px; 
-    margin: 15px;
-}
-section.product.container.card img{
-    width: 100%;
-}
-section.product.container.card a{
-    color:black; 
-    padding: 5px 20px; 
-    text-decoration: none;
-    box-shadow: 0px 0px 3px; 
-    border-radius: 20px;
-}
-footer{
-    background-color:rgb(33, 94, 4); 
-}
 section.home{
     height: 600px;
-    background:url("https://rsmmbogor.com/cfind/source/thumb/images/berita/cover_w963_h474_tw5757_th2831_x1-7_y10_raw-green-beans-cup-placed-wooden-floor.jpg"); 
+    background-color: darkolivegreen; 
     background-attachment: fixed; 
     background-size: cover;
     background-repeat: no-repeat;
     padding-top: 100px;
+    font-size: x-large;
 }
 section.home div{
     text-align: center;
@@ -102,13 +70,18 @@ section.home a{
     box-shadow: 0px 0px 3px;
     border-radius: 20px;
 }
+.home a:hover{
+    transition: 0.5s;
+    background-color: rgb(97, 156, 9);
+}
 section.about{
     height: 600px;
-    background:url("https://rsmmbogor.com/cfind/source/thumb/images/berita/cover_w963_h474_tw5757_th2831_x1-7_y10_raw-green-beans-cup-placed-wooden-floor.jpg"); 
+    background-color: darkolivegreen; 
     background-attachment: fixed; 
     background-size: cover;
     background-repeat: no-repeat;
     padding-top: 100px;
+    font-size:x-large
 }
 section.about div{
     text-align: center;
@@ -119,4 +92,84 @@ section.about div{
 }
 section.about.me{
     font-size: 20px;
+}
+section.product{
+    background-color:darkolivegreen; 
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-attachment: fixed; height: 1200px;
+}
+section.product .container{
+justify-content: center;
+display: flex;
+Flex-wrap: wrap; 
+padding-top: 50px;
+}
+section.product .container .card{
+    background-color: rgb(133, 161, 31); 
+    text-align: center; 
+    padding: 5px;
+    width:300px;
+    height: 420px; 
+    margin: 15px;
+    border-radius: 20px;
+}
+.product .container .card a:hover{
+    transition: 0.5s;
+    background-color: rgb(98, 131, 42);
+}
+section.product .container .card img{
+    height: 200px;
+    width: 230px;
+}
+section.product .container .card a{
+    border-radius: 20px;
+    color:black; 
+    padding: 5px 20px; 
+    text-decoration: none;
+    box-shadow: 0px 0px 3px; 
+}
+section.contact{
+    background-color: black; height: 600px;
+}
+section.contact.card{
+    margin: auto;
+    color: white;
+    text-align: center;
+    padding-top: 100px; width:400px; 
+}
+section.contact .card img{
+    width: 200px;
+}
+footer{
+    background-color: darkolivegreen; height:50px;
+}
+footer .medsos{
+    text-align: center; 
+    padding-top: 10px;
+}
+footer .medsos a{
+    color:#ffffff; 
+    font-size: 20px; 
+    padding: 5px 20px;
+}
+section.contact{
+    background-color: darkolivegreen; height: 600px;
+    font-size: x-large;
+    text-align: center;
+} 
+section.contact.card{
+    margin: auto; 
+    color: white; 
+    text-align: center;
+    padding-top: 100px; 
+    width: 400px;
+}
+section.contact.card img{ 
+    width: 200px;
+}
+.card:hover{
+    box-shadow: 0px 0px 5px; color: white;
+    transition: 0.5s;
+    animation: shake 0.5s;
 }
