@@ -9,7 +9,7 @@ header{
     justify-content: space-between;
     position: fixed;
     z-index: 1;
-    color:white;
+    color:rgb(255, 255, 255);
     padding: 10px;
 }
 nav a {
@@ -23,7 +23,7 @@ nav a:hover{
     transition: 0.5s;
 }
 section.home{
-    background: url("gb1.jpg"); 
+    background-color: darkolivegreen;
     background-size: cover; 
     background-repeat: no-repeat; 
     background-attachment: fixed; 
@@ -46,7 +46,7 @@ section.contact{
 }
 section.home{
     height: 600px;
-    background-color: darkolivegreen; 
+    background:url("kacang\ hijau\ -\ Copy.jpg"); 
     background-attachment: fixed; 
     background-size: cover;
     background-repeat: no-repeat;
@@ -76,7 +76,7 @@ section.home a{
 }
 section.about{
     height: 600px;
-    background-color: darkolivegreen; 
+    background:url("hijau\ bekgron.jpeg"); 
     background-attachment: fixed; 
     background-size: cover;
     background-repeat: no-repeat;
@@ -92,6 +92,9 @@ section.about div{
 }
 section.about.me{
     font-size: 20px;
+}
+section.about img{
+    width: 200px;
 }
 section.product{
     background-color:darkolivegreen; 
@@ -142,7 +145,7 @@ section.contact .card img{
     width: 200px;
 }
 footer{
-    background-color: darkolivegreen; height:50px;
+    background-color: rgb(19, 58, 1); height:50px;
 }
 footer .medsos{
     text-align: center; 
@@ -152,24 +155,46 @@ footer .medsos a{
     color:#ffffff; 
     font-size: 20px; 
     padding: 5px 20px;
+    text-decoration: none;
 }
 section.contact{
-    background-color: darkolivegreen; height: 600px;
+    background-color: darkolivegreen; height: 900px;
     font-size: x-large;
     text-align: center;
+    color: white;
 } 
-section.contact.card{
+section.contact .card{
     margin: auto; 
     color: white; 
     text-align: center;
     padding-top: 100px; 
     width: 400px;
 }
-section.contact.card img{ 
-    width: 200px;
+section.contact .card img{ 
+    width: 100px;
+}
+section.contact .card div{
+     color: white;
 }
 .card:hover{
     box-shadow: 0px 0px 5px; color: white;
     transition: 0.5s;
     animation: shake 0.5s;
+}
+@keyframes shake{
+    0%{
+        transform:rotate(0deg);
+    }
+    25%{
+        transform:rotate(3deg);
+    }
+    50%{
+        transform:rotate(-3deg);
+    }
+    75%{
+        transform:rotate(1deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
 }
